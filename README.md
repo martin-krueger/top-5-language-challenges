@@ -2,7 +2,7 @@
 
 Implement challenges for the top 5 programming languages [1]:
 
-1. Rust - Number of Islands
+1. [Rust - Number of Islands](https://github.com/martin-krueger/top-5-language-challenges/tree/master/rust-number-of-islands)
 2. TypeScript - 
 3. Python - 
 4. Kotlin - 
