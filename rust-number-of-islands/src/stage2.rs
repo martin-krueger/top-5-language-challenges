@@ -21,7 +21,7 @@ impl Algorithm {
                     state[row][col] = 0
                 } else {
                     number += 1;
-                    self.mark_island(&map, &mut state, row, col, number as i32 )
+                    self.explore_island(&map, &mut state, row, col, number as i32 )
                 }
             }
         }
@@ -29,7 +29,7 @@ impl Algorithm {
         return (number, state);
     }
 
-    fn mark_island(
+    fn explore_island(
         &self, map: &Vec<Vec<char>>, state: &mut Vec<Vec<i32>>, row: usize, col: usize, island: i32) {
         if state[row][col] != -1 {
             return
@@ -38,19 +38,19 @@ impl Algorithm {
         state[row][col] = island;
 
         if row > 0 && map[row - 1][col] == '1' {
-            self.mark_island(map, state, row - 1, col, island)
+            self.explore_island(map, state, row - 1, col, island)
         }
 
         if col > 0 && map[row][col - 1] == '1' {
-            self.mark_island(map, state, row, col - 1, island)
+            self.explore_island(map, state, row, col - 1, island)
         }
 
         if row < map.len() - 1 && map[row + 1][col] == '1' {
-            self.mark_island(map, state, row + 1, col, island)
+            self.explore_island(map, state, row + 1, col, island)
         }
 
         if col < map[0].len() - 1 && map[row][col + 1] == '1' {
-            self.mark_island(map, state, row, col + 1, island)
+            self.explore_island(map, state, row, col + 1, island)
         }
     }
 }
