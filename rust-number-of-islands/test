@@ -1,0 +1,7 @@
+    island_map[0] = vec![1, 1, 1, 0, 1, 1, 1];
+    island_map[1] = vec![0, 0, 0, 0, 0, 0, 1];
+    island_map[2] = vec![1, 1, 1, 1, 1, 0, 1];
+    island_map[3] = vec![1, 0, 0, 0, 1, 0, 0];
+    island_map[4] = vec![1, 0, 1, 0, 1, 0, 1];
+    island_map[5] = vec![1, 0, 1, 1, 1, 0, 1];
+    island_map[6] = vec![1, 1, 1, 1, 0, 1, 1];
