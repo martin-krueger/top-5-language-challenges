@@ -25,7 +25,9 @@ export class ResourceView extends React.Component<Props, Resource> {
     }
 
     render() {
-        return <div><button onClick={this.fill}>Fill</button> {this.props.name}: {this.resource.getCurrentAmount().toFixed(2)} </div>
+        return <div>
+            <button onClick={this.fill}>Fill</button> {this.props.name}: {this.resource.getCurrentAmount().toFixed(2)} {this.resource.unit}
+        </div>
     }
 
 }

@@ -3,12 +3,16 @@
  * it can be reduced by taking and it be filled up to the maximum amount.
  */
 export class Resource {
+    readonly name: string
+    readonly unit: string
     private maxAmount: number
     private currentAmount: number
 
-    constructor(maxAmount: number, currentAmount: number) {
+    constructor(name: string, maxAmount: number, currentAmount: number, unit: string) {
+        this.name = name
         this.maxAmount = maxAmount
         this.currentAmount = currentAmount
+        this.unit = unit
     }
 
     /**

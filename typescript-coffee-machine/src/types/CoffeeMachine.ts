@@ -18,9 +18,9 @@ export const Espresso = new CoffeeType("Espresso", 100, 0.05)
 export class CoffeeMachine {
 
     private coffeeTypes = [Coffee, Americano, Espresso]
-    private beans = new Resource(250, 250)
+    private beans = new Resource("beans", 250, 250, "g")
     private minBeansAmount: number
-    private water = new Resource(4, 4)
+    private water = new Resource("water", 4, 4, "l")
     private minWaterAmount: number
 
     constructor() {
