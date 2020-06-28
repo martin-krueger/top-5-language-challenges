@@ -4,7 +4,7 @@ Implement challenges for the top 5 programming languages [1]:
 
 1. [Rust - Number of Islands](https://github.com/martin-krueger/top-5-language-challenges/tree/master/rust-number-of-islands)
 2. [TypeScript - Coffee Machine](https://github.com/martin-krueger/top-5-language-challenges/tree/master/typescript-coffee-machine) 
-3. [Python - Airport Runway Direction]()
+3. [Python - Airport Runway Direction](https://github.com/martin-krueger/top-5-language-challenges/tree/master/python-airport-runway-direction)
 4. Kotlin - 
 5. GO - 
 
