@@ -5,6 +5,18 @@ Source: [https://platform.entwicklerheld.de/challenge/minimum-rectangle](https:/
 A very good explanation of the algorithm can be found
 [here](https://stackoverflow.com/questions/5919298/algorithm-for-finding-the-fewest-rectangles-to-cover-a-set-of-rectangles-without)
 
+## Build and run with Docker
+
+You can build a Docker image and run it using these commands:
+
+```shell script
+docker build -t minimum-rectangle .
+docker run -it minimum-rectangle
+```
+
+This will print the different scenarios with the calculated minimum rectangles.
+
+
 ## Description
 
 At Craftnote our mission is to provide a digital platform that makes life easier for craftsmen. As the latest member of our development team, your challenge is to provide an algorithm that solves the problem of minimum rectangle partition:

@@ -5,7 +5,7 @@ import kotlin.math.max
 import kotlin.math.min
 
 /**
- * Calculates the minimum number of rectangles the given grid can be composed of.
+ * Calculates the minimum number of rectangles the given grid can be decomposed of.
  */
 class Algorithm(val grid: Grid) {
 
