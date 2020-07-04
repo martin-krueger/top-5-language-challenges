@@ -1,5 +1,10 @@
 # GO - TLS Connection
 
+This is a very simple implementation of an echo server. Client and server must be authenticated using TLS.
+The PKI infrastructure is set up using Vault.
+
+## Run
+
 Download Vault [https://www.vaultproject.io/downloads](https://www.vaultproject.io/downloads), unzip and make it available in path.
 
 Run Vault server:
