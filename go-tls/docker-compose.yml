@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  vault:
+    image: vault:1.4.3
+    ports:
+      - "8200:8200"
+
+  client:
+    image: go-tls-client
+    links:
+      - vault
+    stdin_open: true
+    tty: true
+
+networks:
+  go-tls:
+    driver: "bridge"
