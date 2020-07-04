@@ -54,7 +54,7 @@ server:
 	./server
 
 client:
-	@echo "CTRL-C to stop"
+	@echo "Write something and hit enter. CTRL-C to stop"
 	@cd work; \
 	./extractor client.txt client; \
 	./client
