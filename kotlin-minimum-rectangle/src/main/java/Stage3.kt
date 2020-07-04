@@ -1,3 +1,6 @@
+/**
+ * Create and print a grid.
+ */
 object Stage3 {
 
     @JvmStatic
